@@ -1,5 +1,13 @@
+const path = require('path')
 
-
-module.export={
-
+const config = {
+    entry: {
+        app: './src/main.js'
+    },
+    output: {
+       path: _dirname + '/dist',
+        filename: '[name].js'
+    },
+    mode: 'production'
 }
+module.exports = config;
